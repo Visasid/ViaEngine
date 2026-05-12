@@ -10,3 +10,4 @@ C:\Users\Viasid\source\repos\ViaEngine\obj\Debug\net8.0\ViaEngine.dll
 C:\Users\Viasid\source\repos\ViaEngine\obj\Debug\net8.0\refint\ViaEngine.dll
 C:\Users\Viasid\source\repos\ViaEngine\obj\Debug\net8.0\ViaEngine.pdb
 C:\Users\Viasid\source\repos\ViaEngine\obj\Debug\net8.0\ref\ViaEngine.dll
+C:\Users\Viasid\source\repos\ViaEngine\obj\Debug\net8.0\ViaEngine.sourcelink.json
