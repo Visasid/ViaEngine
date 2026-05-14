@@ -14,6 +14,14 @@ public class Language
     private Dictionary<string, string> translations;
 
     /// <summary>
+    /// Creates a new language dictionary.
+    /// </summary>
+    public Language()
+    {
+        translations = new Dictionary<string, string>();
+    }
+
+    /// <summary>
     /// Creates a new translation.
     /// </summary>
     public void AddTranslation(string name, string translation)
@@ -21,18 +29,13 @@ public class Language
         translations.Add(name, translation);
     }
 
+    /// <summary>
+    /// Returns a translated string.
+    /// </summary>
     public string GetLocalizedString(string name)
     {
         if (translations[name] != null) return translations[name];
         return name;
-    }
-
-    /// <summary>
-    /// Creates a new language dictionary.
-    /// </summary>
-    public Language()
-    {
-        translations = new Dictionary<string, string>();
     }
 
     /// <summary>

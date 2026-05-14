@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Input;
 using ViaEngine.Input;
 using ViaEngine.Audio;
 using ViaEngine.Scenes;
+using ViaEngine.Localization;
 
 namespace ViaEngine;
 
@@ -58,6 +59,11 @@ public class Core : Game
     /// Gets a reference to the audio control system.
     /// </summary>
     public static AudioController Audio { get; private set; }
+
+    /// <summary>
+    /// Gets a reference to the localization handler.
+    /// </summary>
+    public static LocalizationHandler Localization { get; private set; }
 
     /// <summary>
     /// Creates a new Core instance.
@@ -121,6 +127,9 @@ public class Core : Game
 
         // Create a new audio controller.
         Audio = new AudioController();
+
+        // Create a new language handler
+        Localization = new LocalizationHandler();
     }
 
     protected override void UnloadContent()
